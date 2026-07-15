@@ -81,7 +81,7 @@ p {
 
 /* Sections */
 section {
-    padding: 6rem 2rem;
+    padding: 4rem 1.5rem;
     text-align: center;
     max-width: 1100px;
     margin: 0 auto;
@@ -89,8 +89,8 @@ section {
 
 /* Hero Section */
 .hero {
-    padding-top: 7rem;
-    padding-bottom: 4rem;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
     position: relative;
     z-index: 1;
 }
@@ -122,9 +122,9 @@ section {
 }
 
 .logo-container {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto 2.5rem;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto 1.5rem;
     position: relative;
     display: flex;
     justify-content: center;
@@ -140,7 +140,6 @@ section {
     height: 100%;
     object-fit: contain;
     mix-blend-mode: multiply; /* Blends the white image background into the container's bg-color */
-    transform: scale(1.3); /* Zoom in to remove excess white padding from the original image */
 }
 
 .brand-title {
@@ -149,6 +148,7 @@ section {
     letter-spacing: 0.25em;
     margin-bottom: 1.5rem;
     text-indent: 0.25em;
+    line-height: 1.3;
     /* Offset letter spacing for centering */
 }
 
@@ -157,7 +157,7 @@ section {
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    margin: 2rem 0;
+    margin: 1.5rem 0;
 }
 
 .divider-line {
@@ -175,7 +175,7 @@ section {
 }
 
 .divider-star {
-    margin: 1.5rem auto 2.5rem;
+    margin: 1rem auto 1.5rem;
     color: var(--accent-color);
     display: flex;
     justify-content: center;
@@ -207,13 +207,13 @@ section {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     font-weight: 400;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     line-height: 2;
     color: var(--text-secondary);
 }
 
 .anchor-graphic {
-    margin: 3rem auto 4rem;
+    margin: 2rem auto 2.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -314,12 +314,12 @@ section {
     font-family: var(--font-serif);
     font-size: clamp(1.1rem, 2.5vw, 1.3rem);
     line-height: 1.8;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .bold-statement {
-    margin-top: 3rem;
-    padding-top: 3rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
     border-top: 1px solid var(--border-color);
 }
 
@@ -338,7 +338,7 @@ section {
     width: 100%;
     max-width: 450px;
     aspect-ratio: 1 / 1;
-    margin: 4rem auto -5rem;
+    margin: 3rem auto -4rem;
     z-index: 1;
     overflow: hidden;
     border-radius: 12px;
@@ -437,7 +437,7 @@ section {
 .separator-line {
     height: 1px;
     background: linear-gradient(90deg, transparent, var(--border-color), transparent);
-    margin: 3rem auto;
+    margin: 2rem auto;
 }
 
 .separator-line.full-width {
@@ -449,9 +449,9 @@ section {
 .features-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 3rem;
+    gap: 2rem;
     align-items: start;
-    padding-top: 4rem;
+    padding-top: 2rem;
 }
 
 .feature-item {
@@ -503,7 +503,7 @@ section {
 
 /* Promise Section */
 .promise-section {
-    padding-top: 4rem;
+    padding-top: 2rem;
 }
 
 .small-title {
@@ -513,8 +513,8 @@ section {
 .promise-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    margin: 4rem 0;
+    gap: 1.5rem;
+    margin: 2.5rem 0;
 }
 
 .promise-item {
@@ -556,7 +556,7 @@ section {
     font-size: clamp(1.4rem, 3vw, 1.8rem);
     font-style: italic;
     color: var(--text-primary);
-    margin-top: 4rem;
+    margin-top: 2.5rem;
 }
 
 /* Footer CTA Section */
@@ -564,12 +564,12 @@ section {
     max-width: 100%;
     padding: 0;
     position: relative;
-    height: 65vh;
-    min-height: 550px;
+    height: 50vh;
+    min-height: 450px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .footer-bg-wrapper {
@@ -621,9 +621,10 @@ section {
 
 .large-title {
     font-family: var(--font-display);
-    font-size: clamp(1.5rem, 7vw, 2.8rem);
-    letter-spacing: 0.2em;
+    font-size: clamp(1.2rem, 5vw, 2.8rem);
+    letter-spacing: 0.15em;
     margin-bottom: 0.5rem;
+    white-space: nowrap;
 }
 
 .footer-subtitle {
@@ -636,7 +637,7 @@ section {
 
 /* Site Footer */
 .site-footer {
-    padding: 3rem 2rem;
+    padding: 2rem 1.5rem;
     background-color: var(--bg-color);
     position: relative;
     z-index: 10;
@@ -707,19 +708,18 @@ section {
 
 @media (max-width: 600px) {
     section {
-        padding: 4rem 1rem; /* Give more horizontal room for text */
+        padding: 3rem 1rem; /* Give more horizontal room for text */
     }
 
     .brand-title {
         font-size: clamp(1rem, 7vw, 1.5rem);
         letter-spacing: 0.05em;
         text-indent: 0.05em;
-        word-break: keep-all; /* Explicitly prevent mid-word breaking */
     }
 
     .promise-grid {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1.5rem;
     }
 
     .footer-container {

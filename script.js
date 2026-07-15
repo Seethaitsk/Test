@@ -43,21 +43,32 @@ document.addEventListener('DOMContentLoaded', () => {
     // Text Split Animation for elegant staggered reveal
     const animateTitles = document.querySelectorAll('.brand-title, .large-title, .section-title');
     animateTitles.forEach(title => {
-        const text = title.textContent;
-        title.textContent = '';
+        const nodes = Array.from(title.childNodes);
+        title.innerHTML = '';
         
-        for (let i = 0; i < text.length; i++) {
-            const char = text[i];
-            const span = document.createElement('span');
-            span.textContent = char;
-            if (char === ' ') {
-                span.style.whiteSpace = 'pre';
+        let charIndex = 0;
+        nodes.forEach(node => {
+            if (node.nodeType === Node.TEXT_NODE) {
+                const text = node.textContent;
+                for (let char of text) {
+                    const span = document.createElement('span');
+                    span.textContent = char;
+                    if (char === ' ') {
+                        span.style.whiteSpace = 'pre';
+                    }
+                    // Stagger the transition delay for each character
+                    span.style.transitionDelay = `${charIndex * 0.03}s`;
+                    span.classList.add('char-anim');
+                    title.appendChild(span);
+                    charIndex++;
+                }
+            } else if (node.nodeName.toLowerCase() === 'br') {
+                title.appendChild(document.createElement('br'));
+            } else {
+                // For any other elements (like icons), just append them back
+                title.appendChild(node.cloneNode(true));
             }
-            // Stagger the transition delay for each character
-            span.style.transitionDelay = `${i * 0.03}s`;
-            span.classList.add('char-anim');
-            title.appendChild(span);
-        }
+        });
     });
 
     // Image Slider Logic
