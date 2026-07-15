@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond The Sails</title>
+    <meta name="description" content="Inspired by life at sea. Crafted for the people who keep the world moving.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <main>
+        <section class="hero fade-in-section">
+            <div class="logo-container">
+                <img src="assets/logo.png" alt="Beyond The Sails Logo" class="main-logo">
+            </div>
+            <h1 class="brand-title">BEYOND THE SAILS</h1>
+            <div class="divider">
+                <span class="divider-line"></span>
+                <i data-lucide="anchor" class="divider-icon"></i>
+                <span class="divider-line"></span>
+            </div>
+            <p class="subtitle">
+                INSPIRED BY LIFE AT SEA.<br>
+                CRAFTED FOR THE PEOPLE WHO KEEP THE WORLD MOVING.
+            </p>
+            <div class="anchor-graphic">
+                <i data-lucide="anchor" class="anchor-large"></i>
+                <div class="wave-lines">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+            <a href="#" class="cta-button primary-cta">
+                <i data-lucide="instagram" class="icon-small"></i> ORDER ON INSTAGRAM
+            </a>
+        </section>
+
+        <section class="about-section fade-in-section">
+            <h2 class="section-title">WHAT IS BEYOND THE SAILS?</h2>
+            <div class="divider-star">
+                <i data-lucide="sparkle" class="star-icon"></i>
+            </div>
+            <div class="about-content">
+                <p>
+                    Beyond The Sails was born from a life shaped by the sea.<br>
+                    It represents the journeys few witness,<br>
+                    the resilience few understand, and the moments<br>
+                    that define those who spend their lives beyond the horizon.
+                </p>
+                <p>
+                    Every piece is released as a limited story—<br>
+                    designed with purpose, inspired by real journeys,<br>
+                    and never repeated.
+                </p>
+                <p class="bold-statement">
+                    <strong>Not made to follow trends.<br>
+                        Made to carry a story.</strong>
+                </p>
+            </div>
+            <div class="lighthouse-wrapper slider-wrapper">
+                <div class="slider-track" id="imageSlider">
+                    <img src="assets/lighthouse.png" alt="Lighthouse sketch" class="lighthouse-img slide-active">
+                    <img src="assets/ship_sketch.png" alt="Sailing ship sketch" class="lighthouse-img">
+                    <img src="assets/wheel_sketch.png" alt="Ship wheel sketch" class="lighthouse-img">
+                </div>
+                <button class="slider-btn prev-btn" id="sliderPrev" aria-label="Previous sketch"><i data-lucide="chevron-left"></i></button>
+                <button class="slider-btn next-btn" id="sliderNext" aria-label="Next sketch"><i data-lucide="chevron-right"></i></button>
+                <div class="slider-dots" id="sliderDots"></div>
+            </div>
+        </section>
+
+        <div class="separator-line full-width"></div>
+
+        <section class="features-section fade-in-section">
+            <div class="feature-item">
+                <i data-lucide="compass" class="feature-icon accent"></i>
+                <h3>LIMITED STORIES</h3>
+                <p>Every design is<br>released once.<br>When it's gone,<br>it becomes part<br>of the journey.</p>
+            </div>
+            <div class="feature-item with-borders">
+                <svg class="feature-icon accent custom-knot" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M10 8a4 4 0 1 1 4 4h-4z" />
+                    <path d="M14 16a4 4 0 1 0-4-4h4z" />
+                    <path d="M2 12h8" />
+                    <path d="M14 12h8" />
+                </svg>
+                <h3>DESIGNED<br>WITH PURPOSE</h3>
+                <p>Every collection<br>begins with a real<br>story inspired by<br>life at sea.</p>
+            </div>
+            <div class="feature-item">
+                <i data-lucide="waves" class="feature-icon accent"></i>
+                <h3>BUILT TO LAST</h3>
+                <p>Timeless designs<br>created to be worn<br>for years—<br>not seasons.</p>
+            </div>
+        </section>
+
+        <div class="separator-line full-width"></div>
+
+        <section class="promise-section fade-in-section">
+            <h2 class="section-title small-title">OUR PROMISE</h2>
+            <div class="divider-star">
+                <i data-lucide="sparkle" class="star-icon"></i>
+            </div>
+            <div class="promise-grid">
+                <div class="promise-item">
+                    <i data-lucide="ban" class="promise-icon accent"></i>
+                    <p>We don't chase<br>trends.</p>
+                </div>
+                <div class="promise-item">
+                    <i data-lucide="shirt" class="promise-icon accent"></i>
+                    <p>We don't<br>mass produce.</p>
+                </div>
+                <div class="promise-item">
+                    <i data-lucide="refresh-cw" class="promise-icon accent"></i>
+                    <p>We don't<br>recreate stories.</p>
+                </div>
+                <div class="promise-item">
+                    <i data-lucide="heart" class="promise-icon accent"></i>
+                    <p>Every release<br>marks a moment<br>in the journey.</p>
+                </div>
+            </div>
+            <p class="promise-conclusion"><strong>Once it sails, it never returns.</strong></p>
+        </section>
+
+        <section class="footer-cta-section fade-in-section">
+            <div class="footer-bg-wrapper">
+                <div class="overlay-gradient"></div>
+                <img src="assets/sea_bg.png" alt="Calm ocean water" class="footer-bg">
+            </div>
+            <div class="footer-content">
+                <h2 class="section-title large-title">WEAR YOUR JOURNEY.</h2>
+                <div class="divider-star">
+                    <i data-lucide="sparkle" class="star-icon"></i>
+                </div>
+                <p class="footer-subtitle">BECOME PART OF THE STORY.</p>
+                <a href="#" class="cta-button secondary-cta">
+                    <i data-lucide="instagram" class="icon-small"></i> ORDER ON INSTAGRAM
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <a href="#" class="footer-link"><i data-lucide="instagram" class="footer-icon"></i> @beyondthesails</a>
+            <a href="#" class="footer-link"><i data-lucide="phone" class="footer-icon"></i> 91 - 8291912120</a>
+            <a href="mailto:beyondthesails.co@gmail.com" class="footer-link"><i data-lucide="mail"
+                    class="footer-icon"></i> beyondthesails.co@gmail.com</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
