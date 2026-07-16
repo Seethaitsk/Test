@@ -21,6 +21,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
 body {
     background-color: var(--bg-color);
     color: var(--text-primary);
@@ -638,7 +643,7 @@ section {
 
 /* Site Footer */
 .site-footer {
-    padding: 2rem 1.5rem;
+    padding: 2rem 1.5rem 6rem;
     background-color: var(--bg-color);
     position: relative;
     z-index: 10;
@@ -665,6 +670,8 @@ section {
     font-size: 0.8rem;
     letter-spacing: 0.1em;
     transition: color 0.3s ease;
+    word-break: break-word;
+    text-align: center;
 }
 
 .footer-link:hover {
@@ -675,6 +682,36 @@ section {
     width: 14px;
     height: 14px;
     stroke-width: 1.5px;
+}
+
+/* Floating WhatsApp Icon */
+.floating-whatsapp {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #25D366;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.floating-whatsapp:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    background-color: #1EBE5D;
+    color: #fff;
+}
+
+.whatsapp-icon {
+    width: 32px;
+    height: 32px;
 }
 
 /* Responsive Design */
@@ -731,5 +768,17 @@ section {
     .footer-container {
         flex-direction: column;
         justify-content: center;
+    }
+
+    .floating-whatsapp {
+        bottom: 1.5rem;
+        right: 1.5rem;
+        width: 50px;
+        height: 50px;
+    }
+
+    .whatsapp-icon {
+        width: 26px;
+        height: 26px;
     }
 }
